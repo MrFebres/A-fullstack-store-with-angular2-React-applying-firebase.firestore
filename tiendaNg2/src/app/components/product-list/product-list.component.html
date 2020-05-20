@@ -1,0 +1,46 @@
+<div class="homeContainer">
+    <topnav></topnav>
+
+    <div class="main-container">
+        <!-- Realizar itineración de productos según base de datos -->
+        <div class="prod-top">
+            <div class="prod-top-title">
+                <h2>Catálogo de Productos</h2>
+            </div>
+            <div class="prod-top-form">
+                <span class="text center">¿Qué estas buscando?</span>
+                <br>
+                <input type="text" placeholder="Buscar producto" name="filterProd" [(ngModel)]="filterProd">
+            </div>
+
+        </div>
+
+        <div class="product-list-container">
+            <div class="card" *ngFor="let prod of products | filter:filterProd">
+                <img class="homeImg" src="../../../assets/img/{{prod.data.imagen}}">
+                <div class="card-body">
+                    <h6 class="card-title">Producto: {{prod.data.nombre | titlecase}}</h6>
+                    <p class="card-text">Precio: $ {{prod.data.precio}} <br>
+                        Unid. en Existencia: {{prod.data.disponible}} </p>
+                </div>
+
+                <div class="button-group">
+                    <div class="button-div" style="margin-left: .5em;">
+                        <button class="button-next" routerLink="/prod-det/{{prod.id}}">Ver más</button>
+                    </div>
+                    
+                    <div class="button-div">
+                        <button class="button-add" (click)="addProduct(prod.id, prod.data.imagen, prod.data.nombre, prod.data.precio, prod.data.disponible, qty.value)" style="font-size: .9rem;">Añadir</button>
+                        <input [value]="1" type="number" #qty min="1" placeholder="1" style="font-size: 1rem;"/>
+                    </div>
+                    
+                </div>
+            
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>

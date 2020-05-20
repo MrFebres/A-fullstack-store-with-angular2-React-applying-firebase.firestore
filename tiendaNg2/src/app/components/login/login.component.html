@@ -1,0 +1,23 @@
+<div class="loginContainer">
+    <div class="form-container">
+  
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+        
+        <h2 id="inicioSesion" class="white-text">Inicio de Sesión</h2>
+        <br>
+        <div class="form-group">
+          <label for="email" class="white-text">Correo electrónico</label>
+          <br>
+          <input name="email" type="email" formControlName="email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+        </div>
+        
+        <div class="form-group">
+          <label for="password" class="white-text">Contraseña</label>
+          <br>
+          <input name="password" type="password" formControlName="password">
+        </div>
+        <button type="submit" class="btn loginButton" [disabled]="!loginForm.valid">Ingresar</button>
+  
+      </form>
+    </div>
+  </div>

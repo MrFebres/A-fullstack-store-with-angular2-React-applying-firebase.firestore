@@ -1,0 +1,28 @@
+.brand-logo {
+    font-family: cursive;
+    font-size: 1.5em;
+    padding-left: 1em;
+    font-weight: bold;
+    color: darkgrey;
+}
+
+.barra-menor {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-nav {
+    display: flex !important;
+    flex-direction: row;
+    text-decoration: none;
+    padding-right: 2em;
+    list-style-type: none;
+}
+
+i.material-icons {
+    display: flex;
+    font-size: 1.7em;
+    justify-content: space-around;
+    cursor: pointer;
+    color: black;
+}

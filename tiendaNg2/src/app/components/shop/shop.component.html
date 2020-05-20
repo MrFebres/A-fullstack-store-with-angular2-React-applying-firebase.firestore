@@ -1,0 +1,44 @@
+<div class="homeContainer">
+    <topnav></topnav>
+
+    <div class="main-container">
+        <!-- Realizar itineración de productos según base de datos -->
+        <div class="prod-top">
+            <div class="prod-top-title">
+                <h2>Carrito de Compras</h2>
+            </div>
+        </div>
+
+        
+        <div *ngIf="cart.length === 0 || null" class="empty-cart">
+            <span style="font-size: 1.5em;">Tu carrito  de compras esta vacío</span>
+        </div>
+
+        <div *ngIf="cart.length > 0" class="cart-container">
+            <div class="buy-list">
+                <div class="buy-items" *ngFor="let item of cart">
+                    <div class="img-subtotal">
+                        <img id="cart-img" src="../../../assets/img/{{item.img}}">
+                        <span style="margin-left: 1em; padding: 5%;"><b>Subtotal: </b>$ {{item.subtotal}}</span>
+                    </div>
+
+                    <div class="buy-details" style="margin-left: 1em;">
+                        <h2>{{item.name | titlecase}}</h2>
+                        <span><b>Unidades: </b>{{item.qty}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="total-container">
+                <h2>Total: $ {{total}}</h2>
+                <div class="pay-button">
+                    <button (click)="cancelPch()">Cancelar</button>
+                    <button (click)="buyConfirm(cart)">Pagar</button>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+</div>
