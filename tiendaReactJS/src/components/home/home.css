@@ -1,0 +1,18 @@
+.card-container-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 75%;
+}
+
+.card-home {
+    margin: 5%;
+    border: darkgrey solid 2px;
+    border-radius: 10px;
+}
+
+.boton-home {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+}

@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* You can add global styles to this file, and also import other style files */
+.loginContainer {
+  background-image: url('./assets/img/login-fondo.jpg');
+  background-color: #636161;  
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Neucha', cursive;
+}
+
+form>.form-group input {
+  width: 350px;
+  height: 25px;
+  padding: 5px;
+  border: none;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  background: white;
+}
+
+.loginButton {
+  margin-top: 8px;
+  width: 358px;
+  height: 32px;
+  border-radius: 4px;
+  border: none;
+  font-size: 15px;
+  color: #FFFFFF;
+  background: #1270b6;
+  cursor: not-allowed;
+}
+
+.homeContainer {
+  background-image: url('./assets/img/main-fondo.jpg');
+  background-color: #888585;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  /* font-family: 'Neucha', cursive; */
+}
+
+.barraNav {
+  width: 90%;
+  margin: 0 0 5% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
+  align-items: center;
+}
+
+.main-container {
+  background-color: white;
+  border-radius: 15px 15px 0px 0px;
+  width: 90%;
+  height: 87.7%;
+  margin: 0 5% 0 5%;
+  overflow: scroll;
+  justify-content: center;
+  font-family: 'Neucha', cursive;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 2fr 0.7fr 0.7fr;
+  border: darkgrey solid 2px;
+  border-radius: 10px;
+  /* display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border: darkgrey solid 2px;
+  border-radius: 10px; */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: normal;
+  margin: 0;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.homeImg {
+  width: 90%;
+  margin: 5%;
+  border-radius: 1em;
+}
+
+.button {
+  background-color: tomato;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width: 40%;
+  height: 50px;
+  font-size: 1em;
+}
+
+.button-group {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+
+  /* display: flex;
+  flex-direction: row;
+  margin: 5%;
+  justify-content: space-between;
+  align-self: flex-end; */
+}
+
+.button-next {
+  background-color: tomato;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  width: 100%; 
+  height: 100%;
+}
+
+.button-add {
+  background-color: sandybrown;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+  font-size: 1em;
+}
+
+
+#productos {
+  justify-content: space-around;
+  width: 21%;
+  margin: 2%;
+}
+
+#replyNumber {
+  width: 20%;
+}
+
+.product-list-container {
+  display: grid;
+  gap: 1rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-bottom: 1rem;
+}
+
+.prod-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prod-top-title {
+  padding-left: 1em;
+}

@@ -1,0 +1,34 @@
+.container-fluid {
+    /* background-color: white; */
+    border-radius: 15px;
+  }
+  
+#inicioSesion {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1%;
+    color: white;
+  }
+
+  .form-group {
+    margin-bottom: 3%;
+  }
+  
+  .form-group>label {
+    font-size: 1.3rem;
+    color: white;
+  }
+
+  .Error {
+    margin-top: 8px;
+    width: 358px;
+    height: 32px;
+    border-radius: 4px;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    background: #f74040;
+    cursor: not-allowed;
+  }
